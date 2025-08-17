@@ -35,8 +35,8 @@ x-shared:
       NGINX_SERVER_NAME:
       NGINX_SERVER_SCHEME:
       RAILS_TRUSTED_PROXIES: ${RAILS_TRUSTED_PROXIES}
-      ZAMMAD_HTTP_TYPE: ${ZAMMAD_HTTP_TYPE}
-      ZAMMAD_FQDN: ${ZAMMAD_FQDN}
+      ZAMMAD_HTTP_TYPE:
+      ZAMMAD_FQDN:
       ZAMMAD_WEB_CONCURRENCY:
       ZAMMAD_PROCESS_SESSIONS_JOBS_WORKERS:
       ZAMMAD_PROCESS_SCHEDULED_JOBS_WORKERS:
@@ -45,7 +45,7 @@ x-shared:
       ZAMMAD_SESSION_JOBS_CONCURRENT:
       # Variables used by ngingx-proxy container for reverse proxy creations
       # for docs refer to https://github.com/nginx-proxy/nginx-proxy
-      VIRTUAL_HOST: ${VIRTUAL_HOST}
+      VIRTUAL_HOST:
       VIRTUAL_PORT:
       # Variables used by acme-companion for retrieval of LetsEncrypt certificate
       # for docs refer to https://github.com/nginx-proxy/acme-companion
