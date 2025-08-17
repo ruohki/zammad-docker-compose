@@ -45,7 +45,7 @@ x-shared:
       ZAMMAD_SESSION_JOBS_CONCURRENT:
       # Variables used by ngingx-proxy container for reverse proxy creations
       # for docs refer to https://github.com/nginx-proxy/nginx-proxy
-      VIRTUAL_HOST:
+      VIRTUAL_HOST: ${VIRTUAL_HOST}
       VIRTUAL_PORT:
       # Variables used by acme-companion for retrieval of LetsEncrypt certificate
       # for docs refer to https://github.com/nginx-proxy/acme-companion
