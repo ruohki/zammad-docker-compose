@@ -56,6 +56,7 @@ x-shared:
     restart: ${RESTART:-always}
     volumes:
       - zammad-storage:/opt/zammad/storage
+      - zannad-config:/opt/zammad/config
     depends_on:
       - zammad-memcached
       - zammad-postgresql
@@ -137,4 +138,6 @@ volumes:
   zammad-backup:
     driver: local
   zammad-storage:
+    driver: local
+  zammad-config:
     driver: local
